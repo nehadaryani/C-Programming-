@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int x;
+    printf("Enter the marks(x):");
+    scanf("%d",&x);
+    if(x>=90 && x<=100){
+        printf("Grade is A");
+        printf("\nYOU ARE PROMOTED TO NEXT GRADE !!!");
+    }
+    else if(x>=80 && x<90){
+         printf("Grade is B");
+         printf("\nYOU ARE PROMOTED TO NEXT GRADE !!!");
+    }
+    else if(x>=70 && x<80){
+         printf("Grade is C");
+         printf("\nYOU ARE PROMOTED TO NEXT GRADE !!!");
+    }
+    else if(x>=60 && x<70){
+         printf("Grade is D");
+         printf("\nYOU ARE PROMOTED TO NEXT GRADE !!!");
+    }
+    else{
+        printf("YOU ARE FAIL");
+    }
+    
+    return 0;
+}
