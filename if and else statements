@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int age;
+    printf("Enter your age:");
+    scanf("%d",&age);
+    if(age>=18){
+        printf("You can vote");
+    }
+    else{
+        printf("You cannot vote");
+    }
+    printf("\nTHANK YOU!!!!!!");
+    //2nd Method
+    age>=18 ? printf("Can Vote"):printf("Cannot Vote"); //TERNARY OPERATOR
+    return 0;
+}
