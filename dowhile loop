@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int i,m;
+    printf("Enter i= ");
+    scanf("%d",&i);
+    printf("Enter m: ");
+    scanf("%d",&m);
+    do
+    {
+        printf("%d ",i);
+        i++;
+    } while (i<=m);
+    
+    return 0;
+}
