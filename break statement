@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n: ");
+    scanf("%d",&n);
+    for (int i = 0; i < n; i++)
+    {
+        if(i==n-5){
+            break;  //break helps to bring us out from loop
+        }
+        printf("%d ",i);
+    }
+    printf("\nEND");
+    
+    return 0;
+}
