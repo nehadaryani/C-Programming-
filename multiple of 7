@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int n;
+    do
+    {
+        printf("\nEnter n:");
+        scanf("%d",&n);
+        printf("%d ",n);
+        if(n%7==0){   //n is multiple of 7
+            break;
+        }
+    } while (1);
+    printf("\nThank You!!!!!");
+    
+    return 0;
+}
