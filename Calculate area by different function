@@ -1,0 +1,35 @@
+#include<stdio.h>
+int rect(int a,int b){ //FUNCTION FOR RECTANGLE
+    return a*b;
+}
+float circle(float r){ //FUNCTION FOR CIRCLE
+    return 3.14*r*r;
+}
+int square(int n){   //FUNCTION FOR SQUARE
+
+    return n*n;
+}
+int main(){
+    int a,b,area1,area3,n;
+    float r,area2;
+    //FOR RECTANGLE
+    printf("Enter length of rectangle (a)= ");
+    scanf("%d",&a);
+    printf("Enter breadth of rectangle (b)= ");
+    scanf("%d",&b);
+    area1=rect(a,b);
+    printf("Area of Rectangle is:%d ",area1);
+    // FOR CIRCLE
+    printf("\n\nEnter radius of circle (r)= ");
+    scanf("%f",&r);
+    area2=circle(r);
+    printf("Area of Circle is:%f ",area2);
+    //FOR SQUARE
+    printf("\n\nEnter side of square(n)= ");
+    scanf("%d",&n);
+    area3=square(n);
+    printf("Area of Square is:%d ",area3);
+    
+    
+    return 0;
+}
