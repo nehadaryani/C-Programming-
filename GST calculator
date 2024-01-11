@@ -1,0 +1,15 @@
+#include<stdio.h>
+void value(float val){
+    val=val+(0.18*val); //18% GST Applied
+    printf("The Final Price of Product is=%f",val);
+
+
+}
+int main(){
+    //float val=100.0;
+    float val;
+    printf("Enter the Actual price of product: ");
+    scanf("%f",&val);
+    value(val);
+    return 0;
+}
