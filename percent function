@@ -1,0 +1,18 @@
+#include<stdio.h>
+float result(float m,float sc,float sa){
+    float total=m+sc+sa;
+    float percentage=(total/300)*100;
+    return percentage;
+}
+int main(){
+    float m,sc,sa;
+    printf("Enter Maths Marks: ");
+    scanf("%f",&m);
+    printf("Enter Science Marks: ");
+    scanf("%f",&sc);
+    printf("Enter Sanskrit Marks: ");
+    scanf("%f",&sa);
+    float marks=result(m,sc,sa);
+    printf("The Total percentage of student is:%f",marks);
+    return 0;
+}
