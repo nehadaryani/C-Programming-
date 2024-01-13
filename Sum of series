@@ -1,0 +1,16 @@
+#include<stdio.h>
+int sum(int n){
+    if(n==1){
+        return 1;
+    }
+    int sumN=sum(n-1);  //sum from 1 to n-1
+    int Sum1=sumN+n;  //sum from 1 to n with increment
+    return Sum1;      //always use function name to do this method
+}
+int main(){
+    int n;
+    printf("Enter n: ");
+    scanf("%d",&n);
+    printf("Sum is:%d",sum(n));
+    return 0;
+}
