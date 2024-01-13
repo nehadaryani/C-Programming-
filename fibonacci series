@@ -1,0 +1,24 @@
+#include<stdio.h> //fibonacci series[0,1,1,2,3,5,8,13......]starting index is o(zeroth.)
+int  fib(int n){
+    if (n==0)
+    {
+        return 0;
+    }
+    if (n==1)
+    {
+        return 1;
+    }      
+    
+    int fibNm1=fib(n-1);
+    int fibNm2=fib(n-2);
+    int fibN=fibNm1+fibNm2;
+    //printf("Fibonacci of %d is : %d\n",n,fibN);
+    return fibN;
+}
+int main(){
+    int n;
+    printf("Enter n: ");
+    scanf("%d",&n);
+    printf("%d",fib(n));
+    return 0;
+}
