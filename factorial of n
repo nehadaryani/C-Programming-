@@ -1,0 +1,17 @@
+#include<stdio.h> //factorial of n
+int fact(int n){
+      if(n==1){
+        return 1;
+      }
+      int factnumN=fact(n-1);
+      int factnum1=factnumN*n;
+      return factnum1;    
+       
+}
+int main(){
+    int n;
+    printf("Enter n: ");
+    scanf("%d",&n);
+    printf("Factorial of n: %d",fact(n));
+    return 0;
+}
