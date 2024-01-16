@@ -1,0 +1,19 @@
+#include<stdio.h> //call by reference
+void maths(int a,int b,int *sum,int *product,int *avg){
+    *sum=a+b;
+    *product=a*b;
+    *avg=(a+b)/2;
+    
+}
+int main(){
+    int a,b,sum,product,avg;
+    printf("Enter a: ");
+    scanf("%d",&a);
+    printf("Enter b: ");
+    scanf("%d",&b);
+    maths(a,b,&sum,&product,&avg);
+    printf("\nThe Sum of a and b= %d",sum);
+    printf("\nThe product of a and b= %d",product);
+    printf("\nThe Average of a and b= %d",avg);
+    return 0;
+}
