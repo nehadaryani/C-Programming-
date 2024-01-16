@@ -1,0 +1,20 @@
+#include<stdio.h>
+void maths(int a,int b){
+    float sum=a+b;
+    int product=a*b;
+    float avg=sum/2;
+    printf("\nThe Sum of a and b= %f",sum);
+    printf("\nThe product of a and b= %d",product);
+    printf("\nThe Average of a and b= %f",avg);
+}
+int main(){
+    int a,b,sum;
+    printf("Enter a: ");
+    scanf("%d",&a);
+    printf("Enter b: ");
+    scanf("%d",&b);
+    maths(a,b);
+    float avg=sum/2;
+    printf("\nThe Average of a and b= %f",avg);
+    return 0;
+}
