@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int marks[3]={4,5,6};
+    printf("First element of array is = %d",marks[0]);
+    printf("\nSecond element of array is = %d",marks[1]);
+    printf("\nThird element of array is = %d",marks[2]);
+    printf("\nAddress of First element of array is = %d",&marks[0]);
+    printf("\nAddress of Second element of array is = %d",&marks[1]);
+    printf("\nAddress of Third element of array is = %d",&marks[2]);
+    return 0;
+}
