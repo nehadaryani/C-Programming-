@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    float price[3];
+    printf("Enter Prices  of  first Product: ");
+    scanf("%f",&price[0]);
+    printf("Enter Price of second Product: ");
+    scanf("%f",&price[1]);
+    printf("Enter Price of third Product: ");
+    scanf("%f",&price[2]);
+    printf("\nHence,The price of Product along with their GST:\n");
+    printf("\nFirst Product=%f",price[0]+(0.18*price[0]));
+    printf("\nSecond Product=%f",price[1]+(0.18*price[1]));
+    printf("\nThird Product=%f",price[2]+(0.18*price[2]));
+    return 0;
+    
+}
